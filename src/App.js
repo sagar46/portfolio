@@ -7,7 +7,7 @@ import Github from './components/Github';
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Layout from "./components/Layout";
-import './App.css'; // Import the CSS file for styles
+import './App.css';
 
 const App = () => {
     return (
