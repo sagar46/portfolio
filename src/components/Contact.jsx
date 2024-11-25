@@ -22,7 +22,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="relative py-10">
+        <div className="relative py-10 bg-gradient-to-b">
             <div className="relative max-w-4xl mx-auto text-center text-white">
                 <h3 className="text-4xl font-bold mb-6 inline-block pb-2 transition-all duration-300 border-b-2 border-transparent hover:border-white transform hover:scale-105">
                     Get in Touch
@@ -33,7 +33,7 @@ const Contact = () => {
 
                 <div className="space-y-6">
                     {/* Email Section */}
-                    <div className="flex justify-center items-center space-x-4">
+                    <div className="flex flex-col md:flex-row justify-center items-center space-x-4 md:space-x-6">
                         <p className="text-2xl font-medium text-white">Email:</p>
                         <span className="text-2xl text-blue-200 font-medium">sagar.kr1910@gmail.com</span>
                         <button
@@ -45,7 +45,7 @@ const Contact = () => {
                     </div>
 
                     {/* Phone Section */}
-                    <div className="flex justify-center items-center space-x-4">
+                    <div className="flex flex-col md:flex-row justify-center items-center space-x-4 md:space-x-6">
                         <p className="text-2xl font-medium text-white">Phone:</p>
                         <span className="text-2xl text-blue-200 font-medium">9648185419</span>
                         <button

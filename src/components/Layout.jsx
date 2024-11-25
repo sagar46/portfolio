@@ -1,40 +1,28 @@
 import React from 'react';
-import bgImage from '../assets/images/bg-image.jpg'; // Import your background image
-import {FaWhatsapp} from 'react-icons/fa'; // Import the WhatsApp icon from react-icons
+import bgImage from '../assets/images/bg-image.jpg';
+import { FaWhatsapp } from 'react-icons/fa';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
     return (
         <div
-            className="relative"
+            className="relative min-h-screen bg-cover bg-center bg-no-repeat"
             style={{
                 backgroundImage: `url(${bgImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
                 backgroundAttachment: 'fixed',
-                minHeight: '100vh', // Ensures full height of the viewport
             }}
         >
             {children}
 
-            {/* WhatsApp Button */}
             <a
-                href="https://wa.me/9648185419" // Replace with your WhatsApp number
+                href="https://wa.me/9648185419"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="fixed bottom-5 right-5 bg-green-500 rounded-full p-5 shadow-lg text-white text-2xl md:text-3xl lg:text-4xl transition-transform transform hover:scale-110"
                 style={{
-                    position: 'fixed',
-                    bottom: '20px',
-                    right: '20px',
-                    backgroundColor: '#25D366',
-                    borderRadius: '50%',
-                    padding: '20px', // Increased padding for a bigger button
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-                    color: '#fff',
-                    fontSize: '40px', // Increased font size for a bigger icon
                 }}
             >
-                <FaWhatsapp/>
+                <FaWhatsapp />
             </a>
         </div>
     );

@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Layout from "./components/Layout";
 import './App.css';
+import Resume from "./components/Resume";
 
 const App = () => {
     return (
@@ -33,6 +34,10 @@ const App = () => {
 
                 <section id="github">
                     <Github/>
+                </section>
+
+                <section id = "resume">
+                    <Resume/>
                 </section>
 
                 <section id="contact">

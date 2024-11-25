@@ -44,12 +44,12 @@ function AboutMe() {
                     >
                         {ABOUT_ME_DETAILS}
                     </p>
-                    <a
-                        href={CONTACT_SECTION_ID}
-                        className="inline-block bg-gray-800 text-white py-3 px-8 rounded-lg hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105"
-                    >
-                        {GET_IN_TOUCH_TEXT}
-                    </a>
+                    {/*<a*/}
+                    {/*    href={CONTACT_SECTION_ID}*/}
+                    {/*    className="inline-block bg-gray-800 text-white py-3 px-8 rounded-lg hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105"*/}
+                    {/*>*/}
+                    {/*    {GET_IN_TOUCH_TEXT}*/}
+                    {/*</a>*/}
                 </div>
             </div>
         </section>
