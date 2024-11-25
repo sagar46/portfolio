@@ -3,7 +3,7 @@ import githubLogo from '../assets/icons/GithubLogo.svg';
 
 const Projects = () => {
     return (
-        <div className="relative py-10">
+        <div className="relative py-16">
             <div className="relative max-w-4xl mx-auto text-center">
                 <h3 className="text-4xl font-bold text-white mb-6 inline-block pb-2 transition-all duration-300 border-b-2 border-transparent hover:border-white">
                     Projects

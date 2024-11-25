@@ -5,7 +5,7 @@ import LeetcodeIcon from '../assets/icons/LeetcodeIcon.svg';
 
 const Skills = () => {
     return (
-        <div className="relative py-10">
+        <div className="relative py-16">
             <div className="max-w-4xl mx-auto text-center">
 
                 <div>

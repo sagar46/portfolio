@@ -36,7 +36,7 @@ const Github = () => {
     }
 
     return (
-        <div className="max-w-4xl mx-auto text-center py-10">
+        <div className="max-w-4xl mx-auto text-center py-16">
             <div>
                 <h2 className="text-4xl font-bold text-white mb-6 inline-block pb-2 transition-all duration-300 border-b-2 border-transparent hover:border-white">
                     GitHub
