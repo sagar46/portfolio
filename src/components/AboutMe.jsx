@@ -14,7 +14,7 @@ function AboutMe() {
             <div
                 className="max-w-7xl mx-auto flex flex-col md:flex-row items-center p-8 transform transition-transform duration-300 py-16"
             >
-                <div className="flex-shrink-0 w-full md:w-3/12 mb-5 md:mb-0 md:mr-8">
+                <div className="flex justify-center items-center w-full md:w-3/12 mb-5 md:mb-0 md:mr-8">
                     <img
                         src={profileImage}
                         alt="Profile"
