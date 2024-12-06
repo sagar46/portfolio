@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaCopy, FaCheck } from 'react-icons/fa'; // Import icons from react-icons
 import facebookLogo from '../assets/icons/FacebookIcon.svg'; // Update with the correct path
 import linkedinLogo from '../assets/icons/LinkedInIcon.svg'; // Update with the correct path
 
@@ -6,7 +7,6 @@ const Contact = () => {
     const [emailCopied, setEmailCopied] = useState(false);
     const [phoneCopied, setPhoneCopied] = useState(false);
 
-    // Function to copy text to clipboard and change button text color
     const copyToClipboard = (text, type) => {
         navigator.clipboard.writeText(text).then(() => {
             if (type === "email") {
@@ -34,25 +34,25 @@ const Contact = () => {
                 <div className="space-y-6">
                     {/* Email Section */}
                     <div className="flex flex-col md:flex-row justify-center items-center space-x-4 md:space-x-6">
-                        <p className="text-2xl font-medium text-white">Email:</p>
-                        <span className="text-2xl text-blue-200 font-medium">sagar.kr1910@gmail.com</span>
+                        <p className="text-xl font-medium text-white">Email:</p>
+                        <span className="text-xl text-blue-200 font-medium">sagar.kr1910@gmail.com</span>
                         <button
                             onClick={() => copyToClipboard("sagar.kr1910@gmail.com", "email")}
                             className={`px-4 py-2 rounded-lg text-lg transition-all duration-300 transform ${emailCopied ? 'text-green-400' : 'text-blue-400'} hover:text-blue-500 hover:scale-105 font-semibold`}
                         >
-                            {emailCopied ? "Copied!" : "Copy Email"}
+                            {emailCopied ? <FaCheck /> : <FaCopy />}
                         </button>
                     </div>
 
                     {/* Phone Section */}
                     <div className="flex flex-col md:flex-row justify-center items-center space-x-4 md:space-x-6">
-                        <p className="text-2xl font-medium text-white">Phone:</p>
-                        <span className="text-2xl text-blue-200 font-medium">9648185419</span>
+                        <p className="text-xl font-medium text-white">Phone:</p>
+                        <span className="text-xl text-blue-200 font-medium">9648185419</span>
                         <button
                             onClick={() => copyToClipboard("9648185419", "phone")}
                             className={`px-4 py-2 rounded-lg text-lg transition-all duration-300 transform ${phoneCopied ? 'text-green-400' : 'text-blue-400'} hover:text-blue-500 hover:scale-105 font-semibold`}
                         >
-                            {phoneCopied ? "Copied!" : "Copy Phone"}
+                            {phoneCopied ? <FaCheck /> : <FaCopy />}
                         </button>
                     </div>
 
