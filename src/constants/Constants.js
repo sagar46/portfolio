@@ -38,7 +38,6 @@ export const skills = [
     {name: 'Angular', icon: <img src={AngularIcon} alt="Angular" style={{width: '50px', height: '50px',}}/>},
     {name: 'Node.js', icon: <img src={NodeJsIcon} alt="node.js" style={{width: '100px', height: '40px',}}/>},
     {name: 'TypeScript', icon: <img src={TypeScriptIcon} alt="typeScript" style={{width: '100px', height: '40px',}}/>},
-    {name: 'HTML', icon: <img src={HtmlIcon} alt="HTML" style={{width: '50px', height: '50px',}}/>},
     {
         name: 'Spring Security 6',
         icon: <img src={SpringSecurityIcon} alt="Spring Security"
