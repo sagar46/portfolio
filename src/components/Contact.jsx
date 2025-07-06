@@ -55,6 +55,17 @@ const Contact = () => {
                             {phoneCopied ? <FaCheck /> : <FaCopy />}
                         </button>
                     </div>
+                    
+                    <div className="flex flex-col md:flex-row justify-center items-center space-x-4 md:space-x-6">
+                        <p className="text-xl font-medium text-white">Altername Phone:</p>
+                        <span className="text-xl text-blue-200 font-medium">7505975436</span>
+                        <button
+                            onClick={() => copyToClipboard("9648185419", "phone")}
+                            className={`px-4 py-2 rounded-lg text-lg transition-all duration-300 transform ${phoneCopied ? 'text-green-400' : 'text-blue-400'} hover:text-blue-500 hover:scale-105 font-semibold`}
+                        >
+                            {phoneCopied ? <FaCheck /> : <FaCopy />}
+                        </button>
+                    </div>
 
                     {/* Social Icons */}
                     <div className="flex justify-center items-center space-x-8 mt-6">
